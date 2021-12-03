@@ -81,9 +81,8 @@ public class One {
 
 // Algorithm
 /**
- * main():
  * Step 1: Read the lower limit and upper limit from the user
  * Step 2: Check if the lower limit and upper limit are within the range
- * Step 3: If the lower limit and upper limit are within the range, print the values
- * Step 4: If the lower limit and upper limit are not within the range, print "out of range" * 
+ * Step 3: If the lower limit and upper limit are within the range, print the values if they are prime and palindrome
+ * Step 4: If the lower limit and upper limit are not within the range, print "out of range"
  */
