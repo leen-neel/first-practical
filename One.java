@@ -3,52 +3,87 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class One {
+    // This function checks the number of factors of the number
+    // If there are more than 2 factors then, the number is composite, else it's a
+    // prime
     public static boolean isPrime(int n) {
-        // This function returns if a number is a prime number or not
-        int flag = 0;
-        for (int i = 2; i <= n / 2; i++) {
+
+        int factors = 0;
+
+        for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
-                flag = 1;
-                break;
+                factors++;
             }
         }
-        return flag == 0;        
+
+        return factors == 2;
+
     }
 
+    // This function reverses a number and checks if the number is equal to the
+    // parameter
     public static boolean isPalindrome(int n) {
-        // This function returns if a number is a palindrome or not
-        int temp = n;
-        int sum = 0;
-        while (temp > 0) {
-            sum = sum * 10 + temp % 10;
-            temp = temp / 10;
+
+        int revNum = 0;
+        int numberCopy = n;
+
+        int reminder = 0;
+
+        while (numberCopy > 0) {
+            reminder = numberCopy % 10;
+            revNum = (revNum * 10) + reminder;
+            numberCopy /= 10;
         }
-        return sum == n;
+
+        return revNum == n;
+
+    }
+
+    // This function takes the range as parameters and prints the numbers which are
+    // prime and palindrome
+    // The function prints the amount of values printed as well
+    public static void printValues(int m, int n) {
+
+        int count = 0;
+
+        for (int i = m; i <= n; i++) {
+            if (isPrime(i) && isPalindrome(i)) {
+                System.out.print(i + " ");
+                count++;
+            }
+        }
+
+        System.out.println(count == 0 ? "\nInvalid input" : "\nFrequency of composite magic numbers is : " + count);
+
     }
 
     public static void main(String[] args) throws IOException {
-        
+
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Enter the upper limit: ");
-        int m = Integer.parseInt(in.readLine());
-        
         System.out.print("Enter the lower limit : ");
+        int m = Integer.parseInt(in.readLine());
+
+        System.out.print("Enter the upper limit : ");
         int n = Integer.parseInt(in.readLine());
 
-        int count = 0;
-        if (m < 3000 && n < 3000) {
-            for (int i = n; i <= m; i++) {
-                if (isPrime(i) && isPalindrome(i)) {
-                    count++;
-                }
-            }
-        } else {
-            System.out.println("Invalid input");
-            System.exit(0);
-        }
-        
-        System.out.println("The count is : " + count);
+        System.out.println();
 
-    }    
+        if (m < 3000 && n < 3000) {
+            printValues(m, n);
+        } else {
+            System.out.println("Out of range.");
+        }
+
+    }
+
 }
+
+// Algorithm
+/**
+ * main():
+ * Step 1: Read the lower limit and upper limit from the user
+ * Step 2: Check if the lower limit and upper limit are within the range
+ * Step 3: If the lower limit and upper limit are within the range, print the values
+ * Step 4: If the lower limit and upper limit are not within the range, print "out of range" * 
+ */
