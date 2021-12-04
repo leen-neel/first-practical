@@ -68,3 +68,19 @@ public class Five {
    } 
 
 }
+
+/**
+ * isMagic(): 
+ * Step 1: Loop through the number and find the sum of digits.
+ * Step 2: If the sum of digits is 1, then the number is a magic number.
+ * 
+ * isComposite():
+ * Step 1: Loop through the number and find the number of factors.
+ * Step 2: If the number of factors is greater than 2, then the number is a composite number.
+ * 
+ * printValues():
+ * Step 1: Loop through the numbers from m to n.
+ * Step 2: If the number is composite and magic, then print it.
+ * Step: Print the frequency of composite magic numbers.
+ * 
+ */
