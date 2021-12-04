@@ -33,8 +33,22 @@ public class Seven {
             System.out.println(numOf1s(binary) % 2 == 0 ? "Evil number" : "Not an evil number");
         } else {
             System.out.println("Number out of range");
-        }        
+        }
 
     }
     
 }
+
+/**
+ * 
+ * numOf1s():
+ * Step 1: Loop through the string
+ * Step 2: If the character is 1, increment the count
+ * Step 3: Return the count
+ * 
+ * main():
+ * Step 1: Read the number from the user
+ * Step 2: If the number is between 2 and 100, convert it to binary and print the result
+ * Step 3: If the number is not between 2 and 100, print "Number out of range"
+ * 
+ */
