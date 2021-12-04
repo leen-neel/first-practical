@@ -23,13 +23,17 @@ public class Seven {
         System.out.print("Enter a number: ");
         int num = Integer.parseInt(in.readLine());
 
-        String binary = Integer.toBinaryString(num);
+        if (num > 2 && num < 100) {
+            String binary = Integer.toBinaryString(num);
 
-        System.out.println();
-
-        System.out.println("Binary equivalent : " + binary);
-        System.out.println("Number of 1s : " + numOf1s(binary));
-        System.out.println(numOf1s(binary) % 2 == 0 ? "Evil number" : "Not an evil number");
+            System.out.println();
+    
+            System.out.println("Binary equivalent : " + binary);
+            System.out.println("Number of 1s : " + numOf1s(binary));
+            System.out.println(numOf1s(binary) % 2 == 0 ? "Evil number" : "Not an evil number");
+        } else {
+            System.out.println("Number out of range");
+        }        
 
     }
     
