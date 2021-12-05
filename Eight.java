@@ -1,9 +1,25 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Eight {
+
+    // This function checks the number of factors of the number
+    // If there are more than 2 factors then, the number is composite, else it's a
+    // prime
+    public static boolean isPrime(int n) {
+
+        int factors = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                factors++;
+            }
+        }
+
+        return factors == 2;
+
+    }
 
     public static String[] combinations(int n) {
 
@@ -33,7 +49,16 @@ public class Eight {
         System.out.print("Enter a number: ");
         int num = Integer.parseInt(in.readLine());
 
+        String[] combinations = combinations(num);
+        boolean isCircularPrime = false;
         
+        for (int i = 0; i < combinations.length; i++) {
+            if (isPrime(Integer.parseInt(combinations[i]))) {
+                isCircularPrime = true;
+            }
+        }
+
+        System.out.println(isCircularPrime ? num + " is a circular prime." : num + " isn't a circular prime");
 
     }
 
