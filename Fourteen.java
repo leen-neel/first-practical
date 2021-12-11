@@ -77,17 +77,20 @@ public class Fourteen {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Enter the size of the array : ");
+        System.out.print("Enter the number of rows in the array : ");
         int n = Integer.parseInt(in.readLine());
 
-        if (n < 2 || n > 20) {
+        System.out.print("Enter the number of columns in the array : ");
+        int m = Integer.parseInt(in.readLine());
+
+        if (n < 2 || n > 20 || m < 2 || m > 20) {
             System.out.println("Invalid input");
             return;
         }           
 
         System.out.println();
 
-        int[][] arr = new int[n][n];
+        int[][] arr = new int[n][m];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -95,6 +98,14 @@ public class Fourteen {
                 arr[i][j] = Integer.parseInt(in.readLine());
             }
         }
+
+        System.out.println();
+
+        printLargestSmallest(arr);
+
+        System.out.println();
+
+        printArray(sortArray(arr));
         
     }
     
