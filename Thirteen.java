@@ -25,6 +25,11 @@ public class Thirteen {
         System.out.print("Enter the size of the array : ");
         int n = Integer.parseInt(in.readLine());
 
+        if (n < 2 || n > 20) {
+            System.out.println("Invalid input");
+            return;
+        }           
+
         System.out.println();
 
         int[][] arr = new int[n][n];
