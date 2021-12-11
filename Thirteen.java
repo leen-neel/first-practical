@@ -61,3 +61,19 @@ public class Thirteen {
     }
     
 }
+
+/**
+ * main():
+ * Step 1: Start
+ * Step 2: Enter the size of the array
+ * Step 3: Take the array as input
+ * Step 4: Make the mirror image of the array
+ * Step 5: Print the mirror image of the array
+ * 
+ * makeMirrorImage():
+ * Step 1: Take the array as input
+ * Step 2: Loop through the array
+ * Step 3: Set the arr[i][arr[0].length - j - 1] element to the corresponding element in the new array
+ * Step 4: Return the new array
+ * 
+ */
