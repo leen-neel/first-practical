@@ -7,6 +7,11 @@ public class Seventeen {
     public static boolean isPalindrome(String str) {
         
         // Check if the string is a palindrome
+
+        if (str.length() == 0 || str.length() == 1) {
+            return false;
+        }            
+
         if (str.toUpperCase().equals(new StringBuilder(str.toUpperCase()).reverse().toString())) {
             return true;
         } else {
@@ -38,8 +43,13 @@ public class Seventeen {
         if (count == 0) {
             System.out.println("No palindromes found.");
         } else {
-            System.out.println("Palindromes : " + palindromes); 
-            System.out.println("Total palindrome words : " + count);
+            
+            System.out.print("Palindromes : "); 
+            for (String palindrome : palindromes) {
+                System.out.print(palindrome + " ");
+            }
+
+            System.out.println("\nTotal palindrome words : " + count);
         }
     }
 
