@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Seventeen {
     
@@ -24,17 +25,22 @@ public class Seventeen {
         System.out.println();
         String[] words = str.split(" ");
         int count = 0;
+        
+        ArrayList<String> palindromes = new ArrayList<String>();
 
-        System.out.print("Palindrome words : ");
         for (int i = 0; i < words.length; i++) {
             if (isPalindrome(words[i])) {
-                System.out.print(words[i] + " ");
                 count++;
+                palindromes.add(words[i]);
             }
         }
 
-        System.out.println("\nTotal palindrome words : " + count);
-
+        if (count == 0) {
+            System.out.println("No palindromes found.");
+        } else {
+            System.out.println("Palindromes : " + palindromes); 
+            System.out.println("Total palindrome words : " + count);
+        }
     }
 
 }
