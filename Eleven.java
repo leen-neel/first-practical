@@ -55,3 +55,14 @@ public class Eleven {
     }
 
 }
+
+// Algorithm:
+/**
+ * Step 1: Start
+ * Step 2: Get the size of the array
+ * Step 3: Create a 2D array of size n x n
+ * Step 4: Get the data for each position
+ * Step 5: Print the array
+ * Step 6: Get the sum of each row
+ * Step 7: End
+ */
