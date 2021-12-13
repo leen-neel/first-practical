@@ -56,6 +56,13 @@ public class Twelve {
 
 }
 
+// Algorithm:
 /**
- * 
+ * Step 1: Start
+ * Step 2: Read the size of the array
+ * Step 3: Create a 2D array of size n
+ * Step 4: Read the data for each position of the array
+ * Step 5: Check if the array is symmetric or not
+ * Step 6: Print the sum of left and right diagonal of the array separately
+ * Step 7: End
  */
