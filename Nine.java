@@ -19,13 +19,13 @@ class Nine {
 
         int s;
 
-        for(int j=1;j<=n;j++) {    
+        for(int j = 1; j <= n; j++) {    
             int ans = sum(j,n);
             s = 0;
 
             if(ans == n) {
                 for(int y = j; s < n; y++) {
-                    s = s+y;
+                    s = s + y;
                     System.out.print(y + " ");
                 }
                 System.out.println();
