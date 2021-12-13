@@ -33,3 +33,13 @@ class Nine {
         }
     }
 }
+
+// Algorithm:
+/**
+ * Step 1: Start
+ * Step 2: Initialize sum variable
+ * Step 3: Loop through the numbers from 1 to n
+ * Step 4: Add the numbers from 1 to n
+ * Step 5: If the sum is equal to n, print the numbers
+ * Step 6: End
+ */
