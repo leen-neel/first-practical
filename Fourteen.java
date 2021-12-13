@@ -110,3 +110,11 @@ public class Fourteen {
     }
     
 }
+
+// Algorithm
+/**
+ * Step 1: Start
+ * Step 2: Print the largest and smallest number from the array along with the row and column number
+ * Step 3: Sort the array in ascending order
+ * Step 4: End
+ */
