@@ -33,3 +33,13 @@ public class Eighteen {
     }
 
 }
+
+// Algorithm
+/**
+ * Step 1: Start
+ * Step 2: Read input
+ * Step 3: Check if input is valid
+ * Step 4: If valid, convert to palindrome
+ * Step 5: Print original and palindrome
+ * Step 6: End
+ */
