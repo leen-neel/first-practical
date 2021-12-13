@@ -51,3 +51,14 @@ public class Six {
     }
     
 }
+
+// Algorithm:
+/**
+ * Step 1: Start
+ * Step 2: Read input
+ * Step 3: Reverse the number
+ * Step 4: Check if the number is prime
+ * Step 5: Check if the reverse number is prime
+ * Step 6: Print the result
+ * Step 7: End
+ */
