@@ -66,3 +66,13 @@ public class Fifteen {
         }
     }
 }
+
+// Algorithm
+/**
+ * Step 1: Start
+ * Step 2: Sort the array
+ * Step 3: Create a matrix of size n x n
+ * Step 4: Fill the matrix with the sorted array
+ * Step 5: Print the matrix
+ * Step 6: End
+ */
