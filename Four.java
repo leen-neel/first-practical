@@ -71,3 +71,14 @@ public class Four {
     }
 
 }
+
+// Algorithm
+/**
+ * Step 1: Start
+ * Step 2: Check if the number is even
+ * Step 3: Check if the number is between 10 to 49
+ * Step 4: Check if the number is a prime number
+ * Step 5: Check if the difference between the number and the prime number is a prime number
+ * Step 6: Print the difference between the number and the prime number
+ * Step 7: End
+ */
