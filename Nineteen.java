@@ -42,3 +42,14 @@ public class Nineteen {
     }
 
 }
+
+// Algoorithm
+/**
+ * Step 1: Start
+ * Step 2: Read the number of teams
+ * Step 3: Check if the number of teams is valid
+ * Step 4: Read the names of the teams
+ * Step 5: Find the longest name
+ * Step 6: Print the names in the format
+ * Step 7: End
+ */
