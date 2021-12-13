@@ -54,3 +54,16 @@ public class Seventeen {
     }
 
 }
+
+// Algorithm:
+/**
+ * Step 1: Start
+ * Step 2: Read the input
+ * Step 3: Split the input into words
+ * Step 4: Check if the word is a palindrome
+ * Step 5: If the word is a palindrome, increment the count
+ * Step 6: If the count is 0, print "No palindromes found."
+ * Step 7: If the count is not 0, print "Palindromes : " and the palindromes
+ * Step 8: Print "Total palindrome words : " and the count
+ * Step 9: End
+ */
