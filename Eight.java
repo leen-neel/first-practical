@@ -63,3 +63,15 @@ public class Eight {
     }
 
 }
+
+// Algorithm:
+/**
+ * Step 1: Start
+ * Step 2: Get the number
+ * Step 3: Get the number of digits
+ * Step 4: Get the combinations of the number
+ * Step 5: Check if the combinations are prime
+ * Step 6: If the number is prime, then it's a circular prime
+ * Step 7: If the number is not prime, then it's not a circular prime
+ * Step 8: End
+ */
