@@ -99,3 +99,12 @@ public class Twenty {
     }
 
 }
+
+// Algorithm
+/**
+ * Step 1: Start
+ * Step 2: Compute the number of days in the year
+ * Step 3: Compute the number of days in the year after n days
+ * Step 4: Compute the date after n days
+ * Step 5: End
+ */
