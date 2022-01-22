@@ -51,27 +51,27 @@ public class Fourteen {
 
     }
 
-    public static int[][] sortArray(int[][] arr) {
-        
-        // Sort the array in ascending order
-        int n = arr.length;
-        int m = arr[0].length;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                for (int k = j + 1; k < m; k++) {
-                    if (arr[i][j] > arr[i][k]) {
-                        int temp = arr[i][j];
-                        arr[i][j] = arr[i][k];
-                        arr[i][k] = temp;
-                    }
-                }
-            }
-        }
-
-        return arr;
-        
-    }
+   // Sort the array in ascending order
+   public static int[][] sortArray(int arr[][])
+   {
+       int m = arr.length, n = arr[0].length;
+       for (int i = 0; i < m; i++)
+       {
+           for (int j = 0; j < n; j++)
+           {
+               for (int k = (i * n) + j + 1; k < (m * n); k++)
+               {
+                   if (arr[i][j] > arr[k / n][k % n])
+                   {
+                       int temp = arr[i][j];
+                       arr[i][j] = arr[k / n][k % n];
+                       arr[k / n][k % n] = temp;
+                   }
+               }
+           }
+       }
+       return arr;
+   }
 
     public static void main(String[] args) throws IOException {
 
